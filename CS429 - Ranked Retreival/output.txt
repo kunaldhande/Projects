@@ -1,0 +1,284 @@
+Building tf-idf Index: 
+Indexed in  0.5056769848 seconds
+
+Building Champion Index: 
+Indexed in  0.1386599541 seconds
+
+Building cluster pruning: 
+Indexed in  0.3902151585 seconds
+
+['with', 'without', 'yemen']
+===============================================
+Exact query -
+Text-10.txt
+Text-36.txt
+Text-195.txt
+Text-267.txt
+Text-234.txt
+Text-344.txt
+Text-99.txt
+Text-100.txt
+Text-86.txt
+Text-159.txt
+Retrieved in 0.0003151894 seconds
+
+Inexact query : Champion -
+Text-10.txt
+Text-36.txt
+Text-234.txt
+Text-100.txt
+Text-226.txt
+Text-86.txt
+Text-159.txt
+Text-195.txt
+Text-267.txt
+Text-115.txt
+Retrieved in 0.0002288818 seconds
+
+Inexact query : Index elimination - 
+Text-10.txt
+Text-36.txt
+Text-195.txt
+Text-267.txt
+Text-234.txt
+Text-344.txt
+Text-99.txt
+Text-100.txt
+Text-226.txt
+Text-86.txt
+Retrieved in 0.0000619888 seconds
+
+Inexact query : Cluster Pruning - 
+Text-330.txt
+Text-190.txt
+Text-123.txt
+Text-183.txt
+Text-103.txt
+Text-56.txt
+Text-116.txt
+Text-187.txt
+Text-276.txt
+Text-150.txt
+Retrieved in 0.0000400543 seconds
+
+
+['with', 'without', 'yemen', 'yemeni']
+===============================================
+Exact query -
+Text-10.txt
+Text-195.txt
+Text-267.txt
+Text-344.txt
+Text-99.txt
+Text-36.txt
+Text-100.txt
+Text-234.txt
+Text-121.txt
+Text-86.txt
+Retrieved in 0.0002160072 seconds
+
+Inexact query : Champion -
+Text-10.txt
+Text-195.txt
+Text-267.txt
+Text-36.txt
+Text-100.txt
+Text-344.txt
+Text-99.txt
+Text-234.txt
+Text-121.txt
+Text-226.txt
+Retrieved in 0.0002031326 seconds
+
+Inexact query : Index elimination - 
+Text-10.txt
+Text-195.txt
+Text-267.txt
+Text-344.txt
+Text-99.txt
+Text-36.txt
+Text-100.txt
+Text-234.txt
+Text-121.txt
+Text-226.txt
+Retrieved in 0.0000619888 seconds
+
+Inexact query : Cluster Pruning - 
+Text-330.txt
+Text-190.txt
+Text-123.txt
+Text-183.txt
+Text-103.txt
+Text-56.txt
+Text-116.txt
+Text-187.txt
+Text-276.txt
+Text-150.txt
+Retrieved in 0.0000381470 seconds
+
+
+['rest', 'ready', 'more']
+===============================================
+Exact query -
+Text-312.txt
+Text-151.txt
+Text-202.txt
+Text-63.txt
+Text-15.txt
+Text-71.txt
+Text-129.txt
+Text-128.txt
+Text-285.txt
+Text-26.txt
+Retrieved in 0.0006959438 seconds
+
+Inexact query : Champion -
+Text-151.txt
+Text-71.txt
+Text-59.txt
+Text-305.txt
+Text-143.txt
+Text-383.txt
+Text-166.txt
+Text-52.txt
+Text-312.txt
+Text-56.txt
+Retrieved in 0.0006790161 seconds
+
+Inexact query : Index elimination - 
+Text-15.txt
+Text-129.txt
+Text-26.txt
+Text-296.txt
+Text-3.txt
+Text-162.txt
+Text-309.txt
+Text-34.txt
+Text-59.txt
+Text-143.txt
+Retrieved in 0.0042889118 seconds
+
+Inexact query : Cluster Pruning - 
+Text-271.txt
+Text-143.txt
+Text-274.txt
+Text-379.txt
+Text-141.txt
+Text-176.txt
+Text-95.txt
+Text-386.txt
+Text-281.txt
+Text-293.txt
+Retrieved in 0.0001080036 seconds
+
+
+['with', 'ready', 'the', 'war']
+===============================================
+Exact query -
+Text-15.txt
+Text-129.txt
+Text-383.txt
+Text-26.txt
+Text-312.txt
+Text-413.txt
+Text-296.txt
+Text-3.txt
+Text-162.txt
+Text-309.txt
+Retrieved in 0.0015799999 seconds
+
+Inexact query : Champion -
+Text-383.txt
+Text-59.txt
+Text-143.txt
+Text-305.txt
+Text-166.txt
+Text-56.txt
+Text-71.txt
+Text-327.txt
+Text-15.txt
+Text-129.txt
+Retrieved in 0.0014429092 seconds
+
+Inexact query : Index elimination - 
+Text-15.txt
+Text-129.txt
+Text-383.txt
+Text-26.txt
+Text-312.txt
+Text-413.txt
+Text-296.txt
+Text-3.txt
+Text-162.txt
+Text-309.txt
+Retrieved in 0.0005629063 seconds
+
+Inexact query : Cluster Pruning - 
+Text-271.txt
+Text-143.txt
+Text-274.txt
+Text-379.txt
+Text-141.txt
+Text-176.txt
+Text-95.txt
+Text-386.txt
+Text-281.txt
+Text-293.txt
+Retrieved in 0.0001080036 seconds
+
+
+['time', 'political', 'less', 'then']
+===============================================
+Exact query -
+Text-128.txt
+Text-135.txt
+Text-26.txt
+Text-94.txt
+Text-14.txt
+Text-93.txt
+Text-323.txt
+Text-144.txt
+Text-360.txt
+Text-168.txt
+Retrieved in 0.0011160374 seconds
+
+Inexact query : Champion -
+Text-189.txt
+Text-128.txt
+Text-135.txt
+Text-386.txt
+Text-244.txt
+Text-11.txt
+Text-390.txt
+Text-394.txt
+Text-332.txt
+Text-26.txt
+Retrieved in 0.0042049885 seconds
+
+Inexact query : Index elimination - 
+Text-26.txt
+Text-135.txt
+Text-93.txt
+Text-128.txt
+Text-94.txt
+Text-14.txt
+Text-168.txt
+Text-246.txt
+Text-144.txt
+Text-323.txt
+Retrieved in 0.0007560253 seconds
+
+Inexact query : Cluster Pruning - 
+Text-144.txt
+Text-315.txt
+Text-303.txt
+Text-66.txt
+Text-128.txt
+Text-314.txt
+Text-167.txt
+Text-354.txt
+Text-210.txt
+Text-75.txt
+Retrieved in 0.0001578331 seconds
+
+
