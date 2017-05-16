@@ -1,0 +1,26 @@
+#!/bin/sh
+
+if [ "$#" -eq 0 ]; then
+    echo "Enter correct parameters."
+	echo "1.  worker –s animoto –t <N>"
+	echo "2.  worker –s <QNAME> –t <N>"
+	exit
+fi
+
+
+if [ "$2" = "animoto" ]; then
+	if [ "$#" -ne 4 ]; then
+	    echo "Enter correct parameters."
+		echo "worker –s animoto –t <N>"
+		exit
+	fi
+    ruby worker_animoto.rb $2 $4
+	
+else
+	if [ "$#" -ne 4 ]; then
+	    echo "Enter correct parameters."
+		echo "worker –s <QNAME> –t <N>"
+		exit
+	fi
+	ruby worker.rb $2 $4
+fi

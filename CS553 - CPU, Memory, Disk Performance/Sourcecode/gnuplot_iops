@@ -1,0 +1,10 @@
+#!/usr/bin/gnuplot
+set term png
+set output "IOPS.png"
+set terminal png size 1920,1200 enhanced font "Helvetica,20"
+set title "Integer point Operation Per Second"
+set xlabel "Time"
+set ylabel "GIOPS"
+set ytics "1"
+set xtics "50"
+plot "IOPS" title "" with lines
