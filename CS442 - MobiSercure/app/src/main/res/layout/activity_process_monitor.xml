@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="Process Monitor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+  	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#9CFDAE" >
+
+        <TextView
+            android:id="@+id/tv_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running Processes: "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_mem_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Memory: "
+            android:textColor="#000000" />
+    </RelativeLayout>
+    
+  	   <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_weight="9999">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="invisible" 
+            android:gravity="bottom|center"
+            android:layout_marginBottom="25dip">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading app info..." />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_process_monitor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:overScrollMode="never"
+            android:fastScrollEnabled="true">
+        </ListView>
+        
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Processes: " 
+            android:textColor="#000000"
+            android:background="#d6f7de"/>
+
+    </FrameLayout>
+
+  	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:onClick="selectAll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All" />
+
+        <Button
+            android:onClick="selectOppo"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inverse" />
+
+        <Button
+            android:onClick="clearAll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear" />
+
+        <Button
+            android:onClick="enterSetting"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Setting" />
+    </LinearLayout>
+  	   
+  	   
+</LinearLayout>

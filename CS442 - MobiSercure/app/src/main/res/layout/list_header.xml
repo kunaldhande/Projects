@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showProfile"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_text="Profile"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_radius="20dp"
+            fancy:fb_fontIconResource="&#xf007;"
+            fancy:fb_iconPosition="left"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showFriends"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_text="Friends"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_radius="20dp"
+            fancy:fb_fontIconResource="&#xf0c0;"
+            fancy:fb_iconPosition="left"/>
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_virusCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickVirus"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_text="Antivirus"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_radius="20dp"
+            fancy:fb_fontIconResource="&#xf0e4;"
+            fancy:fb_iconPosition="left"/>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_text="Logout"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_radius="20dp"
+            fancy:fb_fontIconResource="&#xf21b;"
+            fancy:fb_iconPosition="left"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#F1F1F1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Devices"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+</LinearLayout>
