@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="#000000"
+        android:id="@+id/itemName"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/goToGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:clickable="false"
+        fancy:fb_defaultColor="@android:color/transparent"
+        fancy:fb_focusColor="@android:color/transparent"
+        fancy:fb_textColor="#000000"
+        fancy:fb_fontIconResource="&#xf061;"
+        fancy:fb_iconPosition="right"
+        fancy:fb_iconFont="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
