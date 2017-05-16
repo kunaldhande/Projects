@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" includeantruntime="false"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/P2PGnutella.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="com.iit.pa2.P2PGnutella"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/P2PGnutella.jar" fork="true">
+        	<arg value="${arg0}"/>
+        	<arg value="${arg1}"/>
+    	</java>
+    </target>
+</project>
