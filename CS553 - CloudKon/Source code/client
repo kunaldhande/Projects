@@ -1,0 +1,32 @@
+#!/bin/sh
+
+if [ "$#" -eq 0 ]; then
+    echo "Enter correct parameters."
+	echo "1.  client –s LOCAL -t <N> -w <WORKLOAD_FILE>"
+	echo "2.  client –s animoto -w <WORKLOAD_FILE>"
+	echo "3.  client –s <QNAME> -w <WORKLOAD_FILE>"
+	exit
+fi
+
+if [ "$2" = "LOCAL" ]; then
+	if [ "$#" -ne 6 ]; then
+	    echo "Enter correct parameters."
+		echo "client –s LOCAL -t <N> -w <WORKLOAD_FILE>"
+		exit
+	fi
+    ruby local.rb $4 $6
+elif [ "$2" = "animoto" ]; then
+	if [ "$#" -ne 4 ]; then
+	    echo "Enter correct parameters."
+		echo "client –s animoto -w <WORKLOAD_FILE>"
+		exit
+	fi
+	ruby client_animoto.rb $2 $4
+else
+	if [ "$#" -ne 4 ]; then
+	    echo "Enter correct parameters."
+		echo "client –s <QNAME> -w <WORKLOAD_FILE>"
+		exit
+	fi
+	ruby client.rb $2 $4
+fi
