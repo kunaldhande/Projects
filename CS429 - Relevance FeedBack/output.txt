@@ -1,0 +1,67 @@
+Part A - Rocchio Alogorithm
+---------------------------
+{'with': 0.375, 'shown': 0.375, 'actor': 0.375, 'trailer': 1.75, 'good': 0.75, 'unseen': -0.15, 'movie': 1.225}
+
+
+Part B - Relevance Feedback
+-----------------------------
+read 83 queries.
+read 83 relevance judgements.
+read 423 documents.
+read 340 stopwords.
+
+Query - 1 kennedy administration pressure on ngo dinh diem to stop suppressing the buddhists . 
+Precision	 Recall	 MAP
+0.14 		 0.14 	 0.04
+0.14 		 0.14 	 0.07
+0.14 		 0.14 	 0.07
+0.29 		 0.29 	 0.17
+0.29 		 0.29 	 0.17
+
+Query - 6 ceremonial suicides committed by some buddhist monks in south viet nam and what they are seeking to gain by such acts . 
+Precision	 Recall	 MAP
+0.11 		 0.11 	 0.04
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+
+Query - 31 leaders which figure in discussions of the future of the west german chancellorship . 
+Precision	 Recall	 MAP
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+
+
+Extra Credit - Psuedo Relevance Feedback
+------------------------------------------
+read 83 queries.
+read 83 relevance judgements.
+read 423 documents.
+read 340 stopwords.
+
+Query - 1 kennedy administration pressure on ngo dinh diem to stop suppressing the buddhists . 
+Precision	 Recall	 MAP
+0.14 		 0.14 	 0.04
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+
+Query - 6 ceremonial suicides committed by some buddhist monks in south viet nam and what they are seeking to gain by such acts . 
+Precision	 Recall	 MAP
+0.11 		 0.11 	 0.04
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+0.11 		 0.11 	 0.03
+
+Query - 31 leaders which figure in discussions of the future of the west german chancellorship . 
+Precision	 Recall	 MAP
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
+0.14 		 0.14 	 0.14
