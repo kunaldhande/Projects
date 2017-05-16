@@ -1,0 +1,52 @@
+Enter your responses inline below and push this file to your private GitHub repository.
+
+
+1. Assume I plan to use the friend_overlap function above to quantify the similarity of two users. E.g., because 344 is larger than 1, I conclude that Jill Stein and Gary Johnson are more similar than Hillary Clinton and Donald Trump.
+How is this approach misleading? How might you fix it?
+
+
+Above assumption is totally wrong. Because, Jill Stein and Gary Johnson have 4155 and 3123 respectively. But, they have only 344 common friends. On the other hand, Hillary and Trump have 748 and 42 friends with only 1 common friend. There is no fair comparison. With this approach we can’t say Jill Stein and Gary Johnson are of similar kind. As they are politician, they might be friends with the same people. They might have same interests, whereas Hillary and Trump have not.
+To fix this approach, we have to analyze their friends, from which community they belongs. Then, with some statistical data, we can conclude similarities between Jill Stein and Gary Johnson. 
+
+
+
+
+
+2. Looking at the output of your followed_by_hillary_and_donald function, why do you think this user is followed by both Hilary Clinton and Donald Trump, who are rivals? Do some web searches to see if you can find out more information.
+
+
+Both Hillary and Trump are friend of Magic Johnson. Magic Johnson is retired NBA basketball player. Johnson is a supporter of the Democratic Party. In 2006, he publicly endorsed Phil Angelides for governor of California, in 2007 he supported Hillary Clinton in her presidential campaign. He also said that he want to be friend with Trump when Hillary will become president. Johnson is fan of Trump’s hotels. As, he is one of the best NBA player and now he is supporting politics. Thus, we can say that both Hillary and Trump are friend with him. 
+ 
+
+
+
+
+
+3. There is a big difference in how many accounts each candidate follows (Gary Johnson follows over 3K accounts, while Donald Trump follows less than 50). Why do you think this is? How might that affect our analysis?
+
+
+
+Gary Johnson is an American businessman, author, politician, and the Libertarian Party nominee for President of the United States. He is Outgoing, spontaneous and fun-loving, ESFPs live to party and love being the center of attention. He is the person who is more active on Twitter. This might leads to 3K friends.
+Donald Trump is the real estate businessman. He doesn’t care that you disagree with him. He is arrogant, egoist person. He only friend with his family members or close relative. He is not that frequent user on twitter. This might result into less number of friends.
+
+Gary is active on Twitter but not on Facebook, on other hand Trump is more active on Facebook. With such uneven analysis we can not get on any conclusion.
+
+
+
+
+
+4. The follower graph we've collected is incomplete. To expand it, we would have to also collect the list of accounts followed by each of the friends. That is, for each user X that Donald Trump follows, we would have to also collect all the users that X follows. Assuming we again use the API call https://dev.twitter.com/rest/reference/get/friends ids, how many requests will we have to make? Given how Twitter does rate limiting (https://dev.twitter.com/rest/public/rate-limiting), approximately how many minutes will it take to collect this data?
+
+
+Assumption: 
+Request time is negligible..
+
+There are total unique friends of all 4 candidates including them : 7685
+Twitter rate limit: 15 requests/15 min
+
+
+While requesting number of time twitter will limit:  7685/15 = 512
+
+
+Therefore, approximate time to collect data: 512 * 15 = 7680
+
