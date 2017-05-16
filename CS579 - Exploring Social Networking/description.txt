@@ -1,0 +1,13 @@
+1. collect.py
+
+Getting tweets from twitter by searching "@realdonaldtrump" and "@narendramodi" and saving to the disk if the tweet has more than 1 user mention.
+
+
+2. cluster.py
+
+Graph is drawn from the relation of the user who tweeted with the user_mensions in the tweet. And then girvan_newman is applied to get communities from the cluster.
+
+
+3. classify.py
+
+Classification is done on the basis of sentiemnts analysis of the tweets collected. Logistic Regression model is used to do so. For this purpose, traing data is downloaded from http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip and then the sentiment analysis is done on the tweets collected.
